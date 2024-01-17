@@ -1,28 +1,9 @@
 import { FilePieChart } from "lucide-react";
-import { Poppins } from "next/font/google";
-import LocalFont from "next/font/local";
 import Link from "next/link";
 
 import { cn } from "@/lib/utils";
+import { headlineFont, contentFont } from "@/lib/font";
 import { Button } from "@/components/ui/button";
-
-const headlineFont = LocalFont({
-    src: "../../public/fonts/font.woff2",
-});
-
-const contentFont = Poppins({
-    subsets: ["latin"],
-    weight:[
-        "100",
-        "200",
-        "300",
-        "400",
-        "500",
-        "600",
-        "800",
-        "900"
-    ],
-});
 
 const AdvertisingPage = () => {
     return (
