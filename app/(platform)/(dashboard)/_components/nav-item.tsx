@@ -66,7 +66,7 @@ export const NavItem = ({
             <AccordionTrigger
                 onClick={() => onOpen(organization.id)}
                 className={cn(
-                    "flex items-center gap-x-2 p-1.5 text-neutral-700 rounded-md hover:bg-neutral-500/10 transition text-start no-underline",
+                    "flex items-center gap-x-2 p-1.5 text-neutral-700 rounded-md hover:bg-neutral-500/10 transition text-start no-underline	hover:no-underline",
                     isActive && !isOpened && "bg-sky-500/10 text-sky-700"
                 )}
             >
@@ -76,7 +76,7 @@ export const NavItem = ({
                             fill
                             src={organization.imageUrl}
                             alt="Organização"
-                            className="rounded-sm object-cover" />
+                            className="rounded-sm object-cover mr-2" />
                     </div>
                     <span className="font-medium text-sm">
                         {organization.name}
