@@ -16,3 +16,5 @@ const OrganizationLayout = ({
         </main>
     )
 }
+
+export default OrganizationLayout;
