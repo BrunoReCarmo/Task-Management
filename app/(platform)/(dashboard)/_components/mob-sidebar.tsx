@@ -13,9 +13,9 @@ export const MobileSidebar = () => {
     const pathname = usePathname();
     const [isMounted, setIsMounted] = useState(false);
 
-    const onOpen = useMobileSidebar((state) => state.onOpen);
+    const onExpand = useMobileSidebar((state) => state.onExpand);
     const onClose = useMobileSidebar((state) => state.onClose);
-    const isOpen = useMobileSidebar((state) => state.isOpen);
+    const isExpand = useMobileSidebar((state) => state.isExpand);
 
     useEffect(() => {
         setIsMounted(true);
@@ -32,13 +32,13 @@ export const MobileSidebar = () => {
     return (
         <>
             <Button
-                onClick={onOpen}
+                onClick={onExpand}
                 className="block md:hidden mr-2"
                 variant="ghost"
                 size="sm">
                 <Menu className="h-4 w-4" />
             </Button>
-            <Sheet open={isOpen} onOpenChange={onClose}>
+            <Sheet open={isExpand} onExpandChange={onClose}>
                 <SheetContent
                     side="left"
                     className="p-2 pt-10">
