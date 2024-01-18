@@ -70,13 +70,13 @@ export const NavItem = ({
                     isActive && !isOpened && "bg-sky-500/10 text-sky-700"
                 )}
             >
-                <div className="flex items-center gap-x2">
+                <div className="flex items-center gap-x-2">
                     <div className="w-7 h-7 relative">
                         <Image
                             fill
                             src={organization.imageUrl}
                             alt="Organização"
-                            className="rounded-sm object-cover mr-2" />
+                            className="rounded-sm object-cover" />
                     </div>
                     <span className="font-medium text-sm">
                         {organization.name}
