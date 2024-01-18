@@ -19,7 +19,7 @@ export type Organization = {
 interface NavItemProps {
     isOpened: boolean;
     isActive: boolean;
-    organization: any;
+    organization: Organization;
     onOpen: (id: string) => void;
 }
 
