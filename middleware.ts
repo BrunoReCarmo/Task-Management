@@ -1,5 +1,5 @@
-import { authMiddleware, redirectToSignIn } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
+import { authMiddleware, redirectToSignIn } from "@clerk/nextjs";
 
 // This example protects all routes including api/trpc routes
 // Please edit this to allow other routes to be public as needed.
@@ -26,7 +26,7 @@ export default authMiddleware({
       const orgSelection = new URL("/select-org", req.url);
       return NextResponse.redirect(orgSelection);
     }
-  },
+  }
 });
 
 export const config = {
