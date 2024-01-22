@@ -1,5 +1,8 @@
-import { WalletCards, Speech, ArrowBigUpDash, ShieldCheck, Medal } from 'lucide-react'
 import React from 'react'
+import { WalletCards, Speech, ArrowBigUpDash, ShieldCheck } from 'lucide-react'
+
+import { cn } from '@/lib/utils';
+import { headlineFont } from '@/lib/font';
 
 const featureItems = [
     {
@@ -38,8 +41,8 @@ function Features() {
                         <p className="mb-6 font-bold uppercase text-primary dark:text-primary-400">
                             Nos conheça
                         </p>
-                        <h2 className="mb-6 text-3xl font-bold">
-                            Flink é o <u className="text-primary dark:text-primary-400">
+                        <h2 className={cn("mb-6 text-3xl font-bold text-violet-800", headlineFont.className)}>
+                            Flink é o <u className="text-violet-950 dark:text-primary-400">
                                 melhor</u>?
                         </h2>
 
@@ -61,7 +64,7 @@ function Features() {
                                             </div>
                                         </div>
                                         <div className="ml-4 grow">
-                                            <p className="mb-3 font-bold">{item.title}</p>
+                                            <p className={cn("mb-1 font-bold text-md", headlineFont.className)}>{item.title}</p>
                                             <p className="text-neutral-500 dark:text-neutral-300">
                                                 {item.description}
                                             </p>

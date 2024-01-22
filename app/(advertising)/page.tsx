@@ -9,7 +9,9 @@ const AdvertisingPage = () => {
                 <Hero />
                 <Illustration />
             </div>
-            <Features />
+            <div className="border-dashed border-r-4 border-gray-200">
+                <Features />
+            </div>
         </div>
     );
 };
