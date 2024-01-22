@@ -39,7 +39,7 @@ function Features() {
                             Nos conheça
                         </p>
                         <h2 className="mb-6 text-3xl font-bold">
-                            Por que Flink é o <u className="text-primary dark:text-primary-400">
+                            Flink é o <u className="text-primary dark:text-primary-400">
                                 melhor</u>?
                         </h2>
 
