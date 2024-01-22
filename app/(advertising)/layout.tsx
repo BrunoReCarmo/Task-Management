@@ -9,7 +9,7 @@ const AdvertisingLayout = ({
     return (
         <div className="h-screen bg-slate-100">
             <Navbar />
-            <main className="pt-28 pb-20 bg-slate-100">
+            <main className="md:pt-16 pt-28 pb-2 bg-slate-100">
                 {children}
             </main>
             <Footer />
