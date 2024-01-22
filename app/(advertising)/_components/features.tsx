@@ -1,8 +1,11 @@
+"use client";
+
 import React from 'react'
 import { WalletCards, Speech, ArrowBigUpDash, ShieldCheck } from 'lucide-react'
 
 import { cn } from '@/lib/utils';
 import { headlineFont } from '@/lib/font';
+import Reveal from '@/lib/reveal';
 
 const featureItems = [
     {
@@ -41,11 +44,12 @@ function Features() {
                         <p className="mb-6 font-bold uppercase text-primary dark:text-primary-400">
                             Nos conheça
                         </p>
-                        <h2 className={cn("mb-6 text-3xl font-bold text-violet-800", headlineFont.className)}>
-                            Flink é o <u className="text-violet-950 dark:text-primary-400">
-                                melhor</u>?
-                        </h2>
-
+                        <Reveal>
+                            <h2 className={cn("mb-6 text-3xl font-bold text-violet-800", headlineFont.className)}>
+                                Flink é o <u className="text-violet-950 dark:text-primary-400">
+                                    melhor</u>?
+                            </h2>
+                        </Reveal>
                         <p className="mb-12 text-neutral-500 dark:text-neutral-300">
                             Separamos alguns dos motivos que tornam o Flink melhor para você e sua escolha.
                             A forma como impacta diretamente sua gestão,
@@ -64,7 +68,9 @@ function Features() {
                                             </div>
                                         </div>
                                         <div className="ml-4 grow">
-                                            <p className={cn("mb-1 font-bold text-md", headlineFont.className)}>{item.title}</p>
+                                            <Reveal>
+                                                <p className={cn("mb-1 font-bold text-md", headlineFont.className)}>{item.title}</p>
+                                            </Reveal>
                                             <p className="text-neutral-500 dark:text-neutral-300">
                                                 {item.description}
                                             </p>
