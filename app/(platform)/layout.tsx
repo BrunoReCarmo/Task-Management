@@ -1,4 +1,5 @@
 import { ClerkProvider } from "@clerk/nextjs";
+import { localization } from "@/lib/localization";
 
 const PlatformLayout = ({
     children
@@ -6,7 +7,7 @@ const PlatformLayout = ({
     children: React.ReactNode;
 }) => {
     return (
-        <ClerkProvider>
+        <ClerkProvider localization={localization}>
             {children}
         </ClerkProvider>
     );
